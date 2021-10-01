@@ -1,10 +1,14 @@
 import java.util.Random;
 
-public class Vec4 {
-    private final Random rand;
-    private int x,y,z,w;
-    public Vec4() {
-        rand = new Random();
-        x = y = z = rand.next(250);
+public class Vec3 {
+    public int x,y,z;
+    public Vec3() {
+        x = y = z = 0;
+    }
+
+    public Vec3(int x, int y, int z) {
+        this.x = x;
+        this.y = y;
+        this.z = z;
     }
 }
