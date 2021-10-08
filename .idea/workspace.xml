@@ -2,20 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="346d5ab0-438c-484f-b697-455360e09f61" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/SortingTechnique.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Factory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DisplayShapes/Circle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DisplayShapes/Circle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DisplayShapes/DisplayPanel$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DisplayShapes/DisplayPanel$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DisplayShapes/DisplayPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DisplayShapes/DisplayPanel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DisplayShapes/Rectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DisplayShapes/Rectangle.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DisplayShapes/Shape.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DisplayShapes/Shape.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DisplayShapes/ShapeFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DisplayShapes/ShapeFactory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DisplayShapes/Square.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DisplayShapes/Square.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Circle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DisplayPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DisplayPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Point.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rectangle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ShapeFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShapeFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SortingTechnique.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SortingTechnique.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Square.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Vec3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Vec3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +79,10 @@
       <workItem from="1632960737978" duration="3404000" />
       <workItem from="1633005987045" duration="1357000" />
       <workItem from="1633057773581" duration="26000" />
+      <workItem from="1633127772213" duration="1448000" />
+      <workItem from="1633194464587" duration="10823000" />
+      <workItem from="1633389340113" duration="599000" />
+      <workItem from="1633556894006" duration="9585000" />
     </task>
     <servers />
   </component>
@@ -84,26 +90,30 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="881" y="356" key="#com.intellij.ide.util.MemberChooser" timestamp="1633203921042">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="881" y="356" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1633203921042" />
     <state x="1231" y="317" key="FileChooserDialogImpl" timestamp="1632796486294">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1231" y="317" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1632796486294" />
-    <state width="1605" height="383" key="GridCell.Tab.0.bottom" timestamp="1633009547320">
+    <state width="1605" height="320" key="GridCell.Tab.0.bottom" timestamp="1633575818469">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1605" height="383" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1633009547320" />
-    <state width="1605" height="383" key="GridCell.Tab.0.center" timestamp="1633009547320">
+    <state width="1605" height="320" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1633575818469" />
+    <state width="1605" height="320" key="GridCell.Tab.0.center" timestamp="1633575818469">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1605" height="383" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1633009547320" />
-    <state width="1605" height="383" key="GridCell.Tab.0.left" timestamp="1633009547320">
+    <state width="1605" height="320" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1633575818469" />
+    <state width="1605" height="320" key="GridCell.Tab.0.left" timestamp="1633575818469">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1605" height="383" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1633009547320" />
-    <state width="1605" height="383" key="GridCell.Tab.0.right" timestamp="1633009547320">
+    <state width="1605" height="320" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1633575818469" />
+    <state width="1605" height="320" key="GridCell.Tab.0.right" timestamp="1633575818469">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1605" height="383" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1633009547320" />
+    <state width="1605" height="320" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1633575818469" />
     <state width="1605" height="290" key="GridCell.Tab.1.bottom" timestamp="1632978222115">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -120,10 +130,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1605" height="290" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1632978222115" />
-    <state x="551" y="348" key="com.intellij.ide.util.TipDialog" timestamp="1633005986208">
+    <state x="551" y="348" key="com.intellij.ide.util.TipDialog" timestamp="1633556927668">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="551" y="348" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1633005986208" />
+    <state x="551" y="348" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1633556927668" />
     <state x="953" y="474" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1632540406120">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

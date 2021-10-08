@@ -7,11 +7,10 @@ public abstract class Shape implements Comparable<Shape>{
     protected Point pos;
 
     public abstract double getArea();
-    public Point getPos() {
+    public Point getPosition() {
         return this.pos;
     }
 
-    public abstract void setSize(Point size);
     public abstract void setPosition(Point pos);
 
     public abstract void draw(Graphics g);

@@ -7,26 +7,18 @@ public class Circle extends Shape {
     private int radius;
 
     public Circle() {
-        //this.radius = ThreadLocalRandom.current().nextInt(30,60);
-        this.radius = 40;
+        this.radius = ThreadLocalRandom.current().nextInt(40,80);
         this.pos = new Point(20,20);
         this.color = new Vec3(ThreadLocalRandom.current().nextInt(0,255),
                 ThreadLocalRandom.current().nextInt(0,255),
                 ThreadLocalRandom.current().nextInt(0,255));
     }
 
-    public Circle(int radius) {
-        this.radius = radius;
-    }
+    public int getRadius() { return this.radius; }
 
     @Override
     public double getArea() {
         return Math.PI * this.radius * this.radius;
-    }
-
-    @Override
-    public void setSize(Point size) {
-        this.radius = size.x;
     }
 
     @Override

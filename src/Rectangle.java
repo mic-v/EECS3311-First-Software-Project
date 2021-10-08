@@ -8,10 +8,8 @@ public class Rectangle extends Shape {
     private int height,width;
 
     public Rectangle() {
-        //this.height = ThreadLocalRandom.current().nextInt(30,60);
-        //this.width = this.height + ThreadLocalRandom.current().nextInt(1,20);
-        this.height = 40;
-        this.width = 60;
+        this.height = ThreadLocalRandom.current().nextInt(20,60);
+        this.width = this.height + ThreadLocalRandom.current().nextInt(40,80);
 
         this.pos = new Point(20,20);
         this.color = new Vec3(ThreadLocalRandom.current().nextInt(0,255),
@@ -19,15 +17,18 @@ public class Rectangle extends Shape {
                 ThreadLocalRandom.current().nextInt(0,255));
 
     }
-    @Override
-    public double getArea() {
-        return this.width * this.height;
+
+    public int getHeight() {
+        return this.height;
+    }
+
+    public int getWidth() {
+        return this.width;
     }
 
     @Override
-    public void setSize(Point size) {
-        this.width = size.x;
-        this.height = size.y;
+    public double getArea() {
+        return this.width * this.height;
     }
 
     @Override
