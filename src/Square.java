@@ -1,8 +1,9 @@
-import javax.swing.*;
 import java.awt.*;
-import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
+/**
+ *
+ */
 public class Square extends Shape {
 
     private int length;
@@ -13,6 +14,15 @@ public class Square extends Shape {
                 ThreadLocalRandom.current().nextInt(0,255),
                 ThreadLocalRandom.current().nextInt(0,255));
     }
+
+    public Square(int length) {
+        this.length = length;
+        this.pos = new Point(20,20);
+        this.color = new Vec3(ThreadLocalRandom.current().nextInt(0,255),
+                ThreadLocalRandom.current().nextInt(0,255),
+                ThreadLocalRandom.current().nextInt(0,255));
+    }
+
 
     public int getLength() {
         return this.length;

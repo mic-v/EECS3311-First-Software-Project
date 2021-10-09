@@ -1,4 +1,8 @@
-import java.util.Random;
+/**
+ * Integer Vector with two components
+ * Used to compartmentalize data that required two integer components such as
+ * a position in a 2D space
+ */
 
 public class Point {
     public int x,y;

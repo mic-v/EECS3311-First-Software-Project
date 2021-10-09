@@ -1,5 +1,8 @@
-import java.util.Random;
-
+/**
+ * Integer Vector with three components
+ * Used to compartmentalize data that required three integer components such as
+ * a position in a 3D space, or the colour of an object
+ */
 public class Vec3 {
     public int x,y,z;
     public Vec3() {

@@ -1,13 +1,23 @@
-import javax.swing.*;
 import java.awt.*;
 import java.util.concurrent.ThreadLocalRandom;
 
+/**
+ *
+ */
 public class Circle extends Shape {
 
     private int radius;
 
     public Circle() {
         this.radius = ThreadLocalRandom.current().nextInt(40,80);
+        this.pos = new Point(20,20);
+        this.color = new Vec3(ThreadLocalRandom.current().nextInt(0,255),
+                ThreadLocalRandom.current().nextInt(0,255),
+                ThreadLocalRandom.current().nextInt(0,255));
+    }
+
+    public Circle(int radius) {
+        this.radius = radius;
         this.pos = new Point(20,20);
         this.color = new Vec3(ThreadLocalRandom.current().nextInt(0,255),
                 ThreadLocalRandom.current().nextInt(0,255),
