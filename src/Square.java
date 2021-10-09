@@ -1,12 +1,17 @@
 import java.awt.*;
 import java.util.concurrent.ThreadLocalRandom;
-
 /**
- *
+ * Square shape
+ * Inherits from Shape and functions from Shape are implemented for a square
+ * but also has its own distinct data such as length
  */
 public class Square extends Shape {
 
     private int length;
+
+    /**
+     * Creates Square with random length, colour, and position
+     */
     public Square() {
         this.length = ThreadLocalRandom.current().nextInt(40,80);
         this.pos = new Point(20,20);
@@ -15,6 +20,10 @@ public class Square extends Shape {
                 ThreadLocalRandom.current().nextInt(0,255));
     }
 
+    /**
+     * Creates Square with specified length
+     * @param length
+     */
     public Square(int length) {
         this.length = length;
         this.pos = new Point(20,20);
@@ -24,20 +33,35 @@ public class Square extends Shape {
     }
 
 
+    /**
+     * Returns length of square
+     * @return length
+     */
     public int getLength() {
         return this.length;
     }
 
+    /**
+     * Returns area of square
+     * @return area of square
+     */
     @Override
     public double getArea() {
         return this.length * this.length;
     }
 
+    /**
+     * Sets position of shape in the interface
+     * @param pos
+     */
     @Override
     public void setPosition(Point pos) {
         this.pos = pos;
     }
 
+    /**
+     * Customized drawing of shape in the interface
+     */
     @Override
     public void draw(Graphics g)
     {

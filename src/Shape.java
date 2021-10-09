@@ -1,5 +1,10 @@
 import java.awt.*;
 
+/**
+ * Abstraction of a "Shape" object
+ * Basic abstraction of a what a shape is including its positioning, colour, etc.
+ *
+ */
 public abstract class Shape implements Comparable<Shape>{
 
     protected Vec3 color;
@@ -17,7 +22,6 @@ public abstract class Shape implements Comparable<Shape>{
     @Override
     public int compareTo(Shape otherShape)
     {
-        //System.out.println("Shape1 area:" + this.getArea() + " Shape2 area: " + otherShape.getArea());
         if(this.getArea() < otherShape.getArea())
             return -1;
         else if(this.getArea() > otherShape.getArea())

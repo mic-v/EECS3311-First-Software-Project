@@ -6,6 +6,11 @@ import java.util.Arrays;
 import java.util.Random;
 import javax.swing.*;
 
+/**
+ * DisplayShapes program
+ * @author Michael Victorino
+ * @author 216864621
+ */
 public class DisplayPanel extends JPanel {
 
     private static JFrame frame;
@@ -14,6 +19,7 @@ public class DisplayPanel extends JPanel {
     private static DisplayPanel drawPanel;
 
     public static void main(String[] args) {
+        // Setup the screen interface for the user
         frame = new JFrame("Display shapes");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(600,600);
@@ -29,6 +35,12 @@ public class DisplayPanel extends JPanel {
         buttonPanel.add(loadButton);
         buttonPanel.add(sortButton);
 
+        /**
+         * Load Shapes button
+         * Generates a panel for the JFrame that will draw the shapes, generate the shapes
+         * from generateShapes(), and then the drawing panel gets added into JFrame
+         * Redraw the frame to force draw the shapes into screen using the shapes implemented draw function
+         */
         loadButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
@@ -42,6 +54,11 @@ public class DisplayPanel extends JPanel {
             }
         });
 
+        /**
+         * Sort shapes button
+         * Clears the drawing panel of the shapes, sorts the shapes
+         * and finally redraws the shapes with the sorted list
+         */
         sortButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
@@ -66,6 +83,12 @@ public class DisplayPanel extends JPanel {
         frame.setVisible(true);
     }
 
+    /**
+     * Draws the shapes in the interface
+     * Iterates from the list of shapes from ArrayList shapes and
+     * calls their draw function
+     * @param g
+     */
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
         ShapeFactory shapeFactory = ShapeFactory.getInstance();
@@ -76,6 +99,11 @@ public class DisplayPanel extends JPanel {
 
     }
 
+    /**
+     * Generate shapes for the user
+     * From a random generator, generates a type of shape and gets added into shapes
+     * and then given a position based on current loop index
+     */
     private static void generateShapes() {
         ShapeFactory shapeFactory = ShapeFactory.getInstance();
         shapes.clear();
@@ -93,7 +121,6 @@ public class DisplayPanel extends JPanel {
             shapes.add(temp);
         }
 
-        ShapeFactory fact1;
     }
 
 }

@@ -35,6 +35,7 @@ public class SortingTechnique {
         {
             for(int j = 0; j < list.size() - i - 1; j++)
             {
+                // Shape j area is greater than adjacent Shape
                 if(list.get(j).compareTo(list.get(j + 1)) > 0)
                 {
                     Point pos1 = list.get(j).getPosition();
